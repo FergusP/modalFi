@@ -60,14 +60,25 @@ export default function Home() {
       {/* SLIDE 1 — MASALAH */}
       <section className='slide' data-slide='1' id='slide-1'>
         <div className='slide-inner'>
-          <h2 className='text-6xl font-black mb-4 text-[#0f172a] leading-tight'>
-            63 juta UMKM.
-            <br />
-            Mayoritas tidak bisa pinjam.
-          </h2>
-          <p className='text-2xl text-[#2563eb] font-semibold mb-12'>
-            Bukan kekurangan uang. Kekurangan cara membuktikan kelayakan.
-          </p>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-12'>
+            <div>
+              <h2 className='text-6xl font-black mb-4 text-[#0f172a] leading-tight'>
+                63 juta UMKM.
+                <br />
+                Mayoritas tidak bisa pinjam.
+              </h2>
+              <p className='text-2xl text-[#2563eb] font-semibold'>
+                Bukan kekurangan uang. Kekurangan cara membuktikan kelayakan.
+              </p>
+            </div>
+            <div className='rounded-2xl overflow-hidden shadow-lg'>
+              <img
+                src='/rejected.png'
+                alt='UMKM ditolak bank'
+                className='w-full h-auto'
+              />
+            </div>
+          </div>
           <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
             <div className='stat-card'>
               <div className='text-6xl font-black text-[#ef4444]'>70%</div>
@@ -76,7 +87,7 @@ export default function Home() {
               </div>
             </div>
             <div className='stat-card'>
-              <div className='text-5xl font-black text-[#ef4444]'>Rp 4300T</div>
+              <div className='text-5xl font-black text-[#ef4444]'>Rp 2400T</div>
               <div className='mt-3 text-lg font-semibold text-[#475569]'>
                 Gap pembiayaan
               </div>
